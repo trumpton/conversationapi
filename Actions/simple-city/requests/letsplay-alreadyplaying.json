@@ -1,0 +1,47 @@
+{
+  "responseId": "edd3a7c7-49eb-49ed-93b8-ff989c99fec8-d5ae01f3",
+  "queryResult": {
+    "queryText": "lets play",
+    "parameters": {},
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            ""
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360/contexts/game",
+        "lifespanCount": 9998,
+        "parameters": {
+          "level": 1,
+          "size": 8,
+          "answers": [
+            25,
+            25,
+            8,
+            8,
+            1,
+            10,
+            17,
+            3
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/example-action-bc0dc/agent/intents/1b80924d-259b-4256-8e5d-af55c97a77ac",
+      "displayName": "lets-play"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360"
+}

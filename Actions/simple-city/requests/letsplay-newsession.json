@@ -1,0 +1,41 @@
+{
+  "outputContexts": [
+    {
+      "parameters": {
+        "level": 1,
+        "size": 8,
+        "answers": [
+          23,
+          13,
+          8,
+          21,
+          0,
+          27,
+          3,
+          12
+        ]
+      },
+      "lifespanCount": 9999,
+      "name": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360/contexts/game"
+    }
+  ],
+  "payload": {
+    "google": {
+      "expectUserResponse": true,
+      "richResponse": {
+        "items": [
+          {
+            "simpleResponse": {
+              "textToSpeech": "OK, just do as I say"
+            }
+          },
+          {
+            "simpleResponse": {
+              "textToSpeech": "Remember and say:  Montevideo Copenhagen Mombai Tehran Moscow Vaduz Liverpool Ottawa"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

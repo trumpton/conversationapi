@@ -1,0 +1,72 @@
+{
+  "responseId": "686a0b06-5947-42af-b652-aecac21e8f16-d5ae01f3",
+  "queryResult": {
+    "queryText": "Ottawa Tripoli Cairo Canberra Moscow Beirut Cambridge Helsinki",
+    "parameters": {
+      "w1": "Ottawa",
+      "w2": "Tripoli",
+      "w3": "Cairo",
+      "w4": "Canberra",
+      "w5": "Moscow",
+      "w6": "Beirut",
+      "w8": "Helsinki",
+      "w7": "Cambridge"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            ""
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360/contexts/game",
+        "lifespanCount": 9998,
+        "parameters": {
+          "level": 18,
+          "size": 8,
+          "answers": [
+            13,
+            7,
+            27,
+            24,
+            27,
+            16,
+            22,
+            16
+          ],
+          "w1": "Ottawa",
+          "w1.original": "Ottawa",
+          "w2": "Tripoli",
+          "w2.original": "Tripoli",
+          "w3": "Cairo",
+          "w3.original": "Cairo",
+          "w4": "Canberra",
+          "w4.original": "Canberra",
+          "w5": "Moscow",
+          "w5.original": "Moscow",
+          "w6": "Beirut",
+          "w6.original": "Beirut",
+          "w8": "Helsinki",
+          "w8.original": "Helsinki",
+          "w7": "Cambridge",
+          "w7.original": "Cambridge"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/example-action-bc0dc/agent/intents/8bb3f3f7-2690-4786-9399-0a9fc95aea00",
+      "displayName": "place-response8"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360"
+}

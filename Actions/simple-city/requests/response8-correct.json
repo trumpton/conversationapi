@@ -1,0 +1,72 @@
+{
+  "responseId": "0c761298-b664-4666-8267-bc69d43ee95a-d5ae01f3",
+  "queryResult": {
+    "queryText": "Montevideo Copenhagen Mombai Tehran Moscow Vaduz Liverpool Ottawa",
+    "parameters": {
+      "w1": "Montevideo",
+      "w2": "Copenhagen",
+      "w3": "Mumbai",
+      "w4": "Tehran",
+      "w5": "Moscow",
+      "w6": "Vaduz",
+      "w8": "Ottawa",
+      "w7": "Liverpool"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            ""
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360/contexts/game",
+        "lifespanCount": 9998,
+        "parameters": {
+          "level": 18,
+          "size": 8,
+          "answers": [
+            23,
+            13,
+            8,
+            21,
+            0,
+            27,
+            3,
+            12
+          ],
+          "w1": "Montevideo",
+          "w1.original": "Montevideo",
+          "w2": "Copenhagen",
+          "w2.original": "Copenhagen",
+          "w3": "Mumbai",
+          "w3.original": "Mombai",
+          "w4": "Tehran",
+          "w4.original": "Tehran",
+          "w5": "Moscow",
+          "w5.original": "Moscow",
+          "w6": "Vaduz",
+          "w6.original": "Vaduz",
+          "w8": "Ottawa",
+          "w8.original": "Ottawa",
+          "w7": "Liverpool",
+          "w7.original": "Liverpool"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/example-action-bc0dc/agent/intents/8bb3f3f7-2690-4786-9399-0a9fc95aea00",
+      "displayName": "place-response8"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360"
+}

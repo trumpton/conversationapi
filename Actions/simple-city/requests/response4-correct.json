@@ -1,0 +1,56 @@
+{
+  "responseId": "0d1b6719-28ba-45e2-b1ee-d85f6756038c-d5ae01f3",
+  "queryResult": {
+    "queryText": "Liverpool Copenhagen Islamabad Tripoli",
+    "parameters": {
+      "w1": "Liverpool",
+      "w2": "Copenhagen",
+      "w3": "Islamabad",
+      "w4": "Tripoli"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            ""
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360/contexts/game",
+        "lifespanCount": 9998,
+        "parameters": {
+          "level": 1,
+          "size": 4,
+          "answers": [
+            3,
+            13,
+            18,
+            26
+          ],
+          "w1": "Liverpool",
+          "w1.original": "Liverpool",
+          "w2": "Copenhagen",
+          "w2.original": "Copenhagen",
+          "w3": "Islamabad",
+          "w3.original": "Islamabad",
+          "w4": "Tripoli",
+          "w4.original": "Tripoli"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/example-action-bc0dc/agent/intents/df9d6ee3-c280-4961-b162-745f38da3321",
+      "displayName": "place-response4"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360"
+}

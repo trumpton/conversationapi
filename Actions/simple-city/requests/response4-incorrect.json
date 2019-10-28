@@ -1,0 +1,56 @@
+{
+  "responseId": "d04e92ab-4151-42fe-892d-6dc62584cfed-d5ae01f3",
+  "queryResult": {
+    "queryText": "blackpool tripoli london berlin",
+    "parameters": {
+      "w1": "Blackpool",
+      "w2": "Tripoli",
+      "w3": "London",
+      "w4": "Berlin"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            ""
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360/contexts/game",
+        "lifespanCount": 9998,
+        "parameters": {
+          "level": 2,
+          "size": 4,
+          "answers": [
+            20,
+            26,
+            12,
+            17
+          ],
+          "w1": "Blackpool",
+          "w1.original": "blackpool",
+          "w2": "Tripoli",
+          "w2.original": "tripoli",
+          "w3": "London",
+          "w3.original": "london",
+          "w4": "Berlin",
+          "w4.original": "berlin"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/example-action-bc0dc/agent/intents/df9d6ee3-c280-4961-b162-745f38da3321",
+      "displayName": "place-response4"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/example-action-bc0dc/agent/sessions/b4d3ea40-57f1-64cc-11c5-5c512a24c360"
+}
