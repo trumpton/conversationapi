@@ -329,6 +329,8 @@ sub lang {
 	if ( $self->{request}->{queryResult}{languageCode} ) {
 		$languageCode = $self->{request}->{queryResult}->{languageCode} ;
 	}
+	# Remove the locale
+	($languageCode) = split( /-/, $languageCode) ;
 	return $languageCode ;	
 }
 
@@ -427,7 +429,7 @@ sub getUserStorage {
 	}
 }
 
-sub clearUserStorage {
+sub loclearUserStorage {
 	my ($self) = @_ ;
 	$self->{clearuserstorage} = $JSON::true ;
 	$self->{userstorage} = {} ;
