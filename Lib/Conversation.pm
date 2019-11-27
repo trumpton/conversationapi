@@ -287,8 +287,7 @@ sub askSimple {
 
 	my $google = $self->{response}->{payload}->{google} ;
 	my $responsecount = scalar(@{$google->{richResponse}->{items}}) ;
-	die "askSimple - too many simpleResponses" if $responsecount >= 2 ;
-
+	
 	my $speech ;
 	my $text ;
 	
@@ -297,6 +296,18 @@ sub askSimple {
 	} else {
 		$speech = $self->_translate($speechlst) ;
 	}
+
+	if ( $responsecount >= 2 ) {
+		
+		my $r = "" ;
+		for ( my $i=0; $i<$responsecount; $i++) {
+			my $rec = $google->{richResponse}->{items}[$i]->{simpleResponse} ;
+			if ( $rec->{ssml} ) { $r = $r . $rec->{ssml} . " ~ " ; }
+			else { $r = $r . $rec->{textToSpeech} . " ~ " ; }
+		}
+		die "askSimple - too many simpleResponses: $r$speech" ;
+	}
+
 	
 	my $record = {
 		"simpleResponse" => {
