@@ -3,11 +3,14 @@
 # Webhook Handler
 #
 
+#
+# Set HTTP_ACTION to action name for dispatch
+# Set HTTP_DEBUG if logging to api/Log is required
+# Set HTTP_ACCESSKEY to match apikey in Handler
+#
+
 use strict;
 use warnings;
-
-# Enable Logging
-my $debuglogging = 0 ;
 
 print "Content-type: text/json\n\n" ;
 
@@ -142,7 +145,7 @@ eval {
 ########################
 # Log Query and Response
 
-if ( $debuglogging ) {
+if ( $ENV{'HTTP_DEBUG'} ) {
 
 if (!$action) {	$action="unknown" ; }
 
