@@ -429,7 +429,7 @@ sub getUserStorage {
 	}
 }
 
-sub loclearUserStorage {
+sub clearUserStorage {
 	my ($self) = @_ ;
 	$self->{clearuserstorage} = $JSON::true ;
 	$self->{userstorage} = {} ;
