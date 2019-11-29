@@ -91,12 +91,14 @@ sub intentName {
 	my $intent = "" ;
 	my $request = $self->{request} ;
 	
-	if ($request->{queryResult}->{intent}->{displayName}) {
+	if ($request->{queryResult}->{action}) {
+		$intent = $request->{queryResult}->{action} ;
+	} elsif ($request->{queryResult}->{intent}->{displayName}) {
 		$intent = $request->{queryResult}->{intent}->{displayName} ;
 	}
 
 	if (!$intent) {
-		die "Intent Not Found (queryResult/intent/displayName missing from request JSON)" ;
+		die "Intent Not Found (queryResult/action or queryResult/intent/displayName missing from request JSON)" ;
 	}
 	
 	return $intent ;
@@ -423,11 +425,9 @@ sub storePermissionsInUserStorage {
 #
 sub setUserStorage {
 	my ($self, $what, $value) = @_ ;
-	if ($self->{userstorage}->{$what} ne $value) {
-		$self->{userstorage}->{$what} = $value ;
-		$self->{userstorageupdated} = $JSON::true ;
-		$self->{clearuserstorage} = $JSON::false ;
-	}
+	$self->{userstorage}->{$what} = $value ;
+	$self->{userstorageupdated} = $JSON::true ;
+	$self->{clearuserstorage} = $JSON::false ;
 	return 1 ;
 }
 
@@ -533,6 +533,12 @@ sub setResponseContext {
 sub clearResponseContext {
 	my ($self, $context) = @_ ;
 	$self->setResponseContext($context, -1) ;
+}
+
+sub getContextParameter {
+	my ($self, $context, $parameter) = @_ ;
+	my $params = getRequestContextParams($self, $context) ;
+	return $params->{$parameter} ;
 }
 
 ###############################
