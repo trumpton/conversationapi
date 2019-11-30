@@ -145,7 +145,7 @@ eval {
 ########################
 # Log Query and Response
 
-if ( $ENV{'HTTP_DEBUG'} ) {
+if ( $ENV{'HTTP_DEBUG'} and $ENV{'HTTP_DEBUG'} eq "yes" ) {
 
 if (!$action) {	$action="unknown" ; }
 
