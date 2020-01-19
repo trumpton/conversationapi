@@ -383,6 +383,39 @@ sub askPermission {
 	return 1 ;
 }
 
+###############################
+# Get Permission
+#
+# getPermission(field)
+#
+# field = displayName, givenName, familyName, longitude, latitude,
+#         formattedAddress, zipCode, city
+#
+sub getPermission {
+    my ($self, $what) = @_ ;
+	my $payload = $self->{request}->{originalDetectIntentRequest}->{payload} ;
+	my $result ;
+	if ( $what eq "displayName" ) {
+		$result=$payload->{user}->{profile}->{displayName} ;
+	} elsif ( $what eq "givenName" ) {
+		$result=$payload->{user}->{profile}->{givenName} ;
+	} elsif ( $what eq "familyName" ) {
+		$result=$payload->{user}->{profile}->{familyName} ;
+	} elsif ( $what eq "longitude" ) {
+		$result=$payload->{device}->{location}->{coordinates}->{longitude} ;
+	} elsif ( $what eq "latitude" ) {
+		$result=$payload->{device}->{location}->{coordinates}->{latitude} ;
+	} elsif ( $what eq "formattedAddress" ) {
+		$result=$payload->{device}->{location}->{coordinates}->{formattedAddress} ;
+	} elsif ( $what eq "city" ) {
+		$result=$payload->{device}->{location}->{coordinates}->{city} ;
+	} elsif ( $what eq "zipCode" ) {
+		$result=$payload->{device}->{location}->{coordinates}->{zipCode} ;
+	} else {
+		$result=undef() ;
+	}
+	return $result ;
+}
 
 ###############################
 # Store Permissions in User Storage
